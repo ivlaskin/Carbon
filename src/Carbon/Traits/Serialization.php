@@ -131,7 +131,7 @@ trait Serialization
             $this->dumpLocale = $this->locale ?? null;
         }
 
-        return $properties;
+        return array_merge($properties, []);
     }
 
     /**
